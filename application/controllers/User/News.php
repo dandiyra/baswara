@@ -13,7 +13,7 @@ class News extends CI_Controller
     public function index()
     {
         $data = [
-            'title'  => 'Home Page',
+            'title'  => 'News Page',
             'data' => $this->M_News->newsDate(),
 
         ];

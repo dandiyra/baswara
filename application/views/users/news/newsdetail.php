@@ -214,7 +214,7 @@
 					<!-- footer copyright -->
 					<div class="footer-copyright">
 						<p>Copyright © 2021. All Rights Reserved. Designed by <a href="https://spectrumcn.com/"
-								target="_blank">Colorlib</a></p>
+								target="_blank">Spectrum Cahaya Nusantara</a></p>
 					</div>
 					<!-- /footer copyright -->
 

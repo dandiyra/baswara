@@ -96,7 +96,7 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1 class="white-text">Lorem Ipsum</h1>
+							<h1 class="white-text">Bhaskara</h1>
 							<p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl.
 								Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc
 								posuere.
