@@ -12,6 +12,12 @@ class News extends CI_Controller
 
     public function index()
     {
+        $user   = $this->session->userdata('idUser');
+        $akses  = $this->db->get_where('access', ['idAccess' => $user])->row_array();
+
+        if ($user == null){
+            redirect('Home/');
+        } elseif ($akses['idUser'] == $akses['menu_id']) {
         $data = [
             'title'     => 'Admin Halaman News',
             'akun'      => $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array(),
@@ -21,6 +27,9 @@ class News extends CI_Controller
         $this->load->view('header/header-adm', $data);
         $this->load->view('sidebar/sidebar');
         $this->load->view('admin/news/news', $data);
+        } else {
+        redirect('Block/');
+    }
     }
 
     public function baru()

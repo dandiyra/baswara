@@ -54,12 +54,12 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="#home">
-							<img class="logo" src="<?= base_url('assets/') ?>img/logo2.png" alt="logo2">
+							<img class="logo" src="<?= base_url('assets/') ?>img/logo5.png" alt="bhaswara">
 							<!-- <img class="logo-alt" src="<?= base_url('assets/') ?>img/logo2.png" alt="logo2"> -->
 						</a>
 						<a href="#about">
 							<!-- <img class="logo" src="<?= base_url('assets/') ?>img/logo2.png" alt="logo2"> -->
-							<img class="logo-alt" src="<?= base_url('assets/') ?>img/logo2.png" alt="logo2">
+							<img class="logo-alt" src="<?= base_url('assets/') ?>img/logo4.png" alt="bhaswara">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -75,10 +75,7 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li class="has-dropdown"><a href="#blog">News</a>
-						<ul class="dropdown">
-							<li><a href="<?=base_url('User/News/')?>">News Post</a></li>
-						</ul>
+					<li><a href="<?=base_url('User/News/')?>">News</a>
 					</li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
@@ -96,7 +93,7 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1 class="white-text">Bhaskara</h1>
+							<h1 class="white-text">Baswara</h1>
 							<p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl.
 								Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc
 								posuere.
@@ -363,7 +360,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="#home"><img src="<?= base_url('assets/') ?>img/logo2.png" alt="logo2"></a>
+						<a href="#home"><img src="<?= base_url('assets/') ?>img/logo4.png" alt="bhaswara"></a>
 
 					</div>
 					<!-- /footer logo -->
@@ -381,8 +378,8 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2021. All Rights Reserved. Designed by <a href="https://spectrumcn.com/"
-								target="_blank">Spectrum Cahaya Nusantara</a></p>
+						<p>Copyright © 2021. All Rights Reserved. Designed by <a href="#home"
+								target="_blank">PT. Baswara Bhagawanta Indoservices</a></p>
 					</div>
 					<!-- /footer copyright -->
 

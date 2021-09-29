@@ -37,4 +37,18 @@ class M_News extends CI_Model
        return $query->result_array();
    }
 
+   public function data($limit,$start)
+   {
+    $this->db->select('*');
+    $this->db->from('news');
+    $this->db->order_by('idNews', 'desc');
+    $this->db->limit($limit,$start);
+    $query = $this->db->get();
+    return $query->result_array();
+   }
+
+
+
+   
+
 }

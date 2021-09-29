@@ -6,7 +6,13 @@ class AdmM extends CI_Controller
 
     public function index()
     {
-        $data = [
+        $user   = $this->session->userdata('idUser');
+        $akses  = $this->db->get_where('access', ['idAccess' => $user])->row_array();
+
+        if ($user == null){
+            redirect('Home/');
+        } elseif ($akses['idUser'] == $akses['menu_id']) {
+        $data   = [
             'title' => 'Admin Page',
             'user'  => $this->db->get('user')->result_array(),
             'akun'  => $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array(),
@@ -16,6 +22,9 @@ class AdmM extends CI_Controller
         $this->load->view('header/header-adm', $data);
         $this->load->view('sidebar/sidebar', $data);
         $this->load->view('admin/admin-utama/index', $data);
+        } else {
+            redirect('Block/');
+        }
     }
 
     public function Tuser()

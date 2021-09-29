@@ -35,6 +35,9 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<style type="text/css" media="screen">
+
+	</style>
 </head>
 
 <body>
@@ -54,8 +57,8 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="<?=base_url('Home/')?>">
-							<img class="logo" src="<?= base_url('assets/') ?>img/logo2.png" alt="logo2">
-							<img class="logo-alt" src="<?= base_url('assets/') ?>img/logo2.png" alt="logo2">
+							<img class="logo" src="<?= base_url('assets/') ?>img/logo5.png" alt="bhaswara">
+							<img class="logo-alt" src="<?= base_url('assets/') ?>img/logo4.png" alt="bhaswara">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -71,10 +74,7 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="<?=base_url('Home/')?>">Home</a></li>
 					<li><a href="<?=base_url('Home/')?>#about">About</a></li>
-					<li class="has-dropdown"><a href="<?=base_url('Home/')?>#blog">News</a>
-						<ul class="dropdown">
-							<li><a href="<?=base_url('User/News/')?>">News Post</a></li>
-						</ul>
+					<li><a href="<?=base_url('Home/')?>#blog">News</a>
 					</li>
 					<li><a href="<?=base_url('Home/')?>#contact">Contact</a></li>
 				</ul>
@@ -148,10 +148,19 @@
 				<?php } ?>
 				<!-- /blog -->
 			</div>
+			<!-- Pagination -->
+			<div class="row">
+				<ul>
+					<?= $pagin ?>
+				</ul>
+			</div>
 			<!-- /Row -->
 		</div>
 		<!-- /Container -->
 	</div>
+
+
+
 	<!-- /Blog -->
 
 
@@ -169,7 +178,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="<?=base_url('Home/')?>"><img src="<?= base_url('assets/') ?>img/logo2.png"
+						<a href="<?=base_url('Home/')?>"><img src="<?= base_url('assets/') ?>img/logo4.png"
 								alt="logo2"></a>
 					</div>
 					<!-- /footer logo -->

@@ -13,6 +13,12 @@ class Produk extends CI_Controller
 
     public function index()
     {
+        $user   = $this->session->userdata('idUser');
+        $akses  = $this->db->get_where('access', ['idAccess' => $user])->row_array();
+
+        if ($user == null){
+            redirect('Home/');
+        } elseif ($akses['idUser'] == $akses['menu_id']) {
         $data = [
             'title' => 'Admin Produk',
             'akun'  => $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array(),
@@ -27,6 +33,9 @@ class Produk extends CI_Controller
         $this->load->view('header/header-adm', $data);
         $this->load->view('sidebar/sidebar');
         $this->load->view('admin/produk/produk', $data);
+    } else {
+        redirect('Block/');
+    }
     }
 
     public function Tproduk()
