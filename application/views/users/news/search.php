@@ -103,7 +103,7 @@
 				<form action="<?= base_url('Newss/search'); ?>" method="get">
                 <div class="widget">
 						<div class="widget">
-							<input class="search-input" name="keywords" type="text" placeholder="search">
+							<input class="search-input" name="keywords" type="text" placeholder="<?=$keyword?>">
 							<button class="search-btn" type="submit" value="search"><i class="fa fa-search"></i></button>
 						</div>
 					</div>
