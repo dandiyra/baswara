@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="description" content="<?=($title) ?>, <?=($tabel['deskripsi']) ?>"> -->
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<title><?= $title ?></title>
@@ -123,10 +124,10 @@
 				<!-- /Section header -->
 				<!-- blog -->
 				<?php foreach($data as $d) { ?>
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive" src="<?= base_url('assets1/img-produk/') ?><?=$d['gambar']?>"
+							<img class="img-responsive image_news" src="<?= base_url('assets1/img-produk/') ?><?=$d['gambar']?>"
 								alt="">
 						</div>
 						<div class="blog-content">
@@ -141,7 +142,7 @@
 								</p>
 							</div>
 							<br>
-							<a href="<?=base_url('User/News/newsdetail/')?><?= $d['slug'];?>">Read</a>
+							<a href="<?=base_url('Newss/newsdetail/')?><?= $d['slug'];?>">Read</a>
 						</div>
 					</div>
 				</div>

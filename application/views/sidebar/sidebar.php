@@ -16,7 +16,7 @@
      <div id="sidebar" class="sidebar sidebar-with-footer">
          <!-- Aplication Brand -->
          <div class="app-brand">
-             <a href="<?=base_url('AdmM/')?>" title="Sleek Dashboard"> <img src="<?= base_url('assets/') ?>img/logo2.png"
+             <a href="<?=base_url('AdmM/')?>" title="Sleek Dashboard"> <img src="<?= base_url('assets/') ?>img/logo4.png"
                      class="img-fluid" alt="">
                  <span class="brand-name text-truncate"></span>
              </a>

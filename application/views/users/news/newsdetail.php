@@ -6,8 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description"
+        content="<?=$tabel['meta']?>">
+    <meta property="og:image" content="<?= base_url('assets1/img-produk/') ?><?=$tabel['gambar']?>" />
+    <meta property="og:image:width" content="1110" />
+    <meta name="keywords"
+        content="<?=$tabel['keyword']?>">
 
-	<title><?= $title ?></title>
+	<title><?= $tabel['judul']?> | Baswara Bhagawanta Indoservices</title>
 	<link rel="icon" href="<?= base_url('assets/') ?>img/logo3.png" type="image/icon">
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -49,7 +55,7 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="<?=base_url('Home/')?>">
-							<img class="logo" src="<?= base_url('assets/') ?>img/logo2.png" alt="logo2">
+							<img class="logo" src="<?= base_url('assets/') ?>img/logo5.png" alt="baswara">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -116,13 +122,8 @@
 
 						<!-- blog tags -->
 						<div class="blog-tags">
-							<h5>Tags :</h5>
-							<a href="#"><i class="fa fa-tag"></i>Web</a>
-							<a href="#"><i class="fa fa-tag"></i>Design</a>
-							<a href="#"><i class="fa fa-tag"></i>Marketing</a>
-							<a href="#"><i class="fa fa-tag"></i>Development</a>
-							<a href="#"><i class="fa fa-tag"></i>Branding</a>
-							<a href="#"><i class="fa fa-tag"></i>Photography</a>
+							<h5>Keyword :</h5>
+							<a href="#"><i class="fa fa-tag"></i><?= $tabel['keyword'] ?></a>
 						</div>
 						<!-- blog tags -->
 					</div>
@@ -134,40 +135,28 @@
 				<aside id="aside" class="col-md-3">
 
 					<!-- Search -->
+					<form action="<?= base_url('Newss/search'); ?>" method="get">
 					<div class="widget">
 						<div class="widget-search">
-							<input class="search-input" type="text" placeholder="search">
-							<button class="search-btn" type="button"><i class="fa fa-search"></i></button>
+							<input class="search-input1" name="keywords" type="text" placeholder="search">
+							<button class="search-btn" type="submit" value="search"><i class="fa fa-search"></i></button>
 						</div>
 					</div>
+					</form>
 					<!-- /Search -->
 
 					<!-- Category -->
 					<div class="widget">
 						<h3 class="title">Category</h3>
 						<div class="widget-category">
-							<a href="#">Web Design<span>(7)</span></a>
-							<a href="#">Marketing<span>(142)</span></a>
-							<a href="#">Web Development<span>(74)</span></a>
-							<a href="#">Branding<span>(60)</span></a>
-							<a href="#">Photography<span>(5)</span></a>
+							<?php foreach($numCategory as $val) :?>
+							<a href="<?= base_url('Newss/search?keywords='. $val['kategori'])?>"><?= $val['kategori']?><span>(<?= $val['num']; ?>)</span></a>
+							<?php endforeach; ?>
 						</div>
 					</div>
 					<!-- /Category -->
 
 					<!-- Tags -->
-					<div class="widget">
-						<h3 class="title">Tags</h3>
-						<div class="widget-tags">
-							<a href="#">Web</a>
-							<a href="#">Design</a>
-							<a href="#">Graphic</a>
-							<a href="#">Marketing</a>
-							<a href="#">Development</a>
-							<a href="#">Branding</a>
-							<a href="#">Photography</a>
-						</div>
-					</div>
 					<!-- /Tags -->
 
 				</aside>
@@ -195,7 +184,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="#home"><img src="<?= base_url('assets/') ?>img/logo2.png" alt="logo2"></a>
+						<a href="#home"><img src="<?= base_url('assets/') ?>img/logo4.png" alt="baswara"></a>
 
 					</div>
 					<!-- /footer logo -->

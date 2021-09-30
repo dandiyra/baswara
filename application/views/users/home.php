@@ -75,7 +75,7 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="<?=base_url('User/News/')?>">News</a>
+					<li><a href="<?=base_url('Newss/')?>">News</a>
 					</li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
@@ -247,7 +247,7 @@
 				<div class="col-md-4">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive" src="<?= base_url('assets1/img-produk/') ?><?=$v['gambar']?>"
+							<img class="img-responsive image_news" src="<?= base_url('assets1/img-produk/') ?><?=$v['gambar']?>"
 								alt="">
 						</div>
 						<div class="blog-content">
@@ -262,7 +262,7 @@
 							</p>
 							</div>
 							<br>
-							<a href="<?=base_url('User/News/newsdetail/')?><?= $v['slug'];?>">Read</a>
+							<a href="<?=base_url('Newss/newsdetail/')?><?= $v['slug'];?>">Read</a>
 						</div>
 					</div>
 				</div>

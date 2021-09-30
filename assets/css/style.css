@@ -201,7 +201,7 @@ ul, ol {
 
 input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="url"], input[type="tel"], textarea {
     height: 40px;
-    width: 100%;
+    width: 90%;
     border: none;
 	  background: #F4F4F4;
     border-bottom: 2px solid #EEE;
@@ -1326,7 +1326,7 @@ header {
     position: absolute;
     right: 0px;
 	  bottom: 0px;
-    width: 40px;
+    width: 80px;
     height: 40px;
     border: none;
     line-height: 40px;
@@ -1821,6 +1821,33 @@ header {
     letter-spacing: 1px;
     color: #00acc1;
   }
+  @media screen and (max-width : 320px ){
+      
+    .image_news{
+        height: 250px;
+        max-width:100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+  @media screen and (min-width: 325px) and (max-width : 650px ){
+      
+      .image_news{
+          height: 250px;
+          max-width:100%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
+  .image_news{
+    height: 250px;
+    max-width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @-webkit-keyframes preload {
 	0% {
