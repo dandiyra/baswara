@@ -310,7 +310,7 @@
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
 						<h3>Email</h3>
-						<p>email@support.com</p>
+						<p>info@support.com</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -320,7 +320,7 @@
 					<div class="contact">
 						<i class="fa fa-map-marker"></i>
 						<h3>Address</h3>
-						<p>1739 Bubby Drive</p>
+						<p>Karang Tengah</p>
 					</div>
 				</div>
 				<!-- /contact -->
