@@ -265,8 +265,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
-    max-height: 50px;
+    margin-top: 3%;
+    max-height: 45px;
     display: block;
+    margin-left: 3%;
 }
 
 #nav:not(.nav-transparent):not(.fixed-nav) .navbar-brand .logo-alt {
@@ -1104,6 +1106,8 @@ header {
 .blog {
     background-color: #FFF;
     margin: 15px 0px;
+    margin-bottom: auto;
+    
 }
 
 .blog .blog-content {
@@ -1461,7 +1465,7 @@ header {
 }
 
 .footer-logo>a>img {
-    max-height: 80px;
+    max-height: 70px;
 }
 
 .footer-follow {
@@ -1738,6 +1742,9 @@ header {
    display: -webkit-box;
    -webkit-line-clamp: 1; /* number of lines to show */
    -webkit-box-orient: vertical;
+}
+.row1 {
+    margin-left: -15px;
 }
 /*----  Main Style  ----*/
 #cards_landscape_wrap-2{

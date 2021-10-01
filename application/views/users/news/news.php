@@ -116,7 +116,7 @@
 		<!-- Container -->
 		<div class="container">
 			<!-- Row -->
-			<div class="row">
+			<div class="row1">
 				<!-- Section header -->
 				<div class="section-header text-center">
 					<h2 class="title">News Update</h2>
@@ -187,11 +187,8 @@
 					<!-- footer follow -->
 					<ul class="footer-follow">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
 

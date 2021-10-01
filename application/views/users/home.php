@@ -148,11 +148,11 @@
 
 				<!-- About slider -->
 				<div class="col-md-6">
+			
 					<div id="about-slider" class="owl-carousel owl-theme">
-						<img class="img-responsive" src="<?= base_url('assets/') ?>img/about1.jpg" alt="">
-						<img class="img-responsive" src="<?= base_url('assets/') ?>img/about2.jpg" alt="">
-						<img class="img-responsive" src="<?= base_url('assets/') ?>img/about1.jpg" alt="">
-						<img class="img-responsive" src="<?= base_url('assets/') ?>img/about2.jpg" alt="">
+					<?php foreach($gambar as $g) { ?>
+					<img class="img-responsive" src="<?= base_url('assets1/img-produk/') ?><?=$g['gambar']?>">
+					<?php } ?>
 					</div>
 				</div>
 				<!-- /About slider -->
@@ -232,7 +232,7 @@
 		<div class="container">
 
 			<!-- Row -->
-			<div class="row">
+			<div class="row1">
 
 				<!-- Section header -->
 				<div class="section-header text-center">
@@ -244,7 +244,7 @@
 
 				<!-- blog -->
 				<?php foreach(array_slice($value, 0, 3) as $v) { ?>
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<div class="blog">
 						<div class="blog-img">
 							<img class="img-responsive image_news" src="<?= base_url('assets1/img-produk/') ?><?=$v['gambar']?>"
@@ -368,11 +368,8 @@
 					<!-- footer follow -->
 					<ul class="footer-follow">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
 

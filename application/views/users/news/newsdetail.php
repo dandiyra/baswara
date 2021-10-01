@@ -184,7 +184,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="#home"><img src="<?= base_url('assets/') ?>img/logo4.png" alt="baswara"></a>
+						<a href="<?=base_url('Home/')?>"><img src="<?= base_url('assets/') ?>img/logo4.png" alt="baswara"></a>
 
 					</div>
 					<!-- /footer logo -->
@@ -192,11 +192,8 @@
 					<!-- footer follow -->
 					<ul class="footer-follow">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
 

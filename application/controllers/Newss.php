@@ -13,11 +13,11 @@ class Newss extends CI_Controller
     public function index()
     {
         $this->load->library('pagination');
-		$config['base_url'] = base_url().'User/News/index';
+		$config['base_url'] = base_url().'Newss/index';
 		$config['total_rows'] = $this->db->count_all('news');
         $config['use_page_numbers'] = true;
         $config['per_page']         = 12;
-        $config['uri_segment']      = 4;
+        $config['uri_segment']      = 3;
         $config['num_links']        = 5;
         $config['first_link']       = 'First';
         $config['last_link']        = 'Last';
@@ -37,11 +37,11 @@ class Newss extends CI_Controller
         $config['first_tagl_close'] = '</span></li>';
         $config['last_tag_open']    = '<li class="page-item"><span class="page-link">';
         $config['last_tagl_close']  = '</span></li>';
-        $config['first_url']        = base_url().'User/News/';
+        $config['first_url']        = base_url().'Newss/';
         $this->pagination->initialize($config);
         // Ambil data news
 
-        $page                       = ($this->uri->segment(4)) ? ($this->uri->segment(4)-1) * $config['per_page']:0;
+        $page                       = ($this->uri->segment(3)) ? ($this->uri->segment(3)-1) * $config['per_page']:0;
         $news                       =  $this->M_News->data($config['per_page'],$page);
         $data = [
             'title'         => 'News Page',

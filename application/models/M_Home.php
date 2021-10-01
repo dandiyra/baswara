@@ -12,4 +12,13 @@ class M_Home extends CI_Model
         return $query->result_array();
     }
 
+    public function gambar()
+   {
+    $this->db->select("*");
+    $this->db->from('home');
+    $this->db->order_by('idHome', 'desc');
+       $query = $this->db->get();
+       return $query->result_array();
+   }
+
 }
