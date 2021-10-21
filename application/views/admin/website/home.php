@@ -89,7 +89,7 @@
                                       </div>
 
                                       <div class="form-group">
-                                          <label for="Nama Gambar">Keterangan Gambar</label>
+                                          <label for="Nama Gambar">Nama Gambar</label>
                                           <input type="text" class="form-control" id="nama" name="nama">
                                           <span class="mt-2 d-block"><?= form_error('nama') ?></span>
                                       </div>

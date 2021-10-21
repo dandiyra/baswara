@@ -124,7 +124,7 @@
 				<!-- /Section header -->
 				<!-- blog -->
 				<?php foreach($data as $d) { ?>
-				<div class="col-sm-4">
+				<div class="col-md-4">
 					<div class="blog">
 						<div class="blog-img">
 							<img class="img-responsive image_news"

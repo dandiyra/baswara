@@ -187,7 +187,7 @@
 				<div class="col-md-6 margin">
 					<div id="about-slider" class="owl-carousel owl-theme">
 						<?php foreach($gambar as $g) { ?>
-						<img class="img-responsive" src="<?= base_url('assets1/img-produk/') ?><?=$g['gambar']?>">
+						<img class="img-responsive image_home" src="<?= base_url('assets1/img-produk/') ?><?=$g['gambar']?>">
 						<?php } ?>
 					</div>
 				</div>

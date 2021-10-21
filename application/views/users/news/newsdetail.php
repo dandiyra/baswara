@@ -87,7 +87,7 @@
 		<!-- header wrapper -->
 		<div class="header-wrapper sm-padding bg-grey">
 			<div class="container">
-				<h2>News Detail Page</h2>
+				<h2><?=$tabel['judul']?></h2>
 			</div>
 		</div>
 		<!-- /header wrapper -->
@@ -116,14 +116,13 @@
 								<li><i class="fa fa-circle"></i><?=$tabel['kategori']?></li>
 								<li><i class="fa fa-clock-o"></i><?= date("d M Y", $tabel['tanggal'])?></li>
 							</ul>
-							<h3><?=$tabel['judul']?></h3>
 							<p><?=$tabel['berita']?></p>
 						</div>
 
 						<!-- blog tags -->
 						<div class="blog-tags">
 							<h5>Keyword :</h5>
-							<a href="#"><i class="fa fa-tag"></i><?= $tabel['keyword'] ?></a>
+							<a><i class="fa fa-tag"></i><?= $tabel['keyword'] ?></a>
 						</div>
 						<!-- blog tags -->
 					</div>
