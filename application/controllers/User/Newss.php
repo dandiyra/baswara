@@ -16,7 +16,7 @@ class Newss extends CI_Controller
 		$config['base_url'] = base_url().'User/News/index';
 		$config['total_rows'] = $this->db->count_all('news');
         $config['use_page_numbers'] = true;
-        $config['per_page']         = 12;
+        $config['per_page']         = 6;
         $config['uri_segment']      = 4;
         $config['num_links']        = 5;
         $config['first_link']       = 'First';

@@ -177,7 +177,7 @@
 						<p class="text-justify">Maupun cuci kereta wisata yang akan dipergunakan untuk pejabat2 menteri
 							maupun anggota DPR/MPR
 							Cv cikaniti menanagani pencucian kereta api / KRL dan menangani kebersihan setasiun2 kereta
-							api dari perjalanan tersebut diatas memperbarui bendera dengan nama pt. baswana bhagawanta
+							api dari perjalanan tersebut diatas memperbarui bendera dengan nama PT.Baswara Bhagawanta
 							indoservices pada bulan September 2021</p>
 					</div>
 				</div>
