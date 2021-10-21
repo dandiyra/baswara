@@ -118,41 +118,77 @@
 
 			<!-- Row -->
 			<div class="row">
-
 				<!-- why choose us content -->
 				<div class="col-md-6">
 					<div class="section-header">
 						<h2 class="title">About Us</h2>
 					</div>
-					<p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat.
-						Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque purus.
+					<p class="text-justify">Sekapur sirih perusahaan mengurus perjalanan kereta api KAI pada tahun 1962
+						berdiri CV.Tjikaniti, yang bergerak dibidang pengadaan barang berupa kebutuhan batu bara dan
+						kayu bakar
+						pada waktu itu untuk kebutuhan kereta lokomotif /kereta uap cv cikaniti suplay ke PJKA
+						[PERUSAHAAN JAWATAN KERETA API].
 					</p>
 					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Quis varius quam quisque id diam vel quam elementum.</p>
+						<!-- <i class="fa fa-check"></i> -->
+						<p class="text-justify">Dan pada tahun 1982 suplai batu bara dan kayu bakar tdak dgunakan lagi,
+							karna kereta api
+							menggunakan bhan bakar diesel berupa bbm solar, karena batu bara merusak lingkungan.</p>
+					</div>
+					<div class="feature">
+						<!-- <i class="fa fa-check"></i> -->
+						<p class="text-justify">Selanjutnya pada tahun 1982 cv. Tjikaniti berubah menjadi pengadaan
+							barang dan jasa berupa suku
+							cadang kereta api sesuai kebutuhan dari kereta api
+							pada th 1985 berdiri CV.Mandalawangi bergerak d bidang jasa
+							cleaning service cuci kereta api – kereta api yang melayani penumpang ke jawa, kereta wisata
+							dan clening servis cuci kereta – kereta krl</p>
+					</div>
+					<div class="feature">
+						<!-- <i class="fa fa-check"></i> -->
+						<p class="text-justify">CV.Mandalawangi juga mendapat/melayani pekerjan cuci kereta sebelum
+							digunakan untuk perjalanan tamu VVIP/tamu penting Presiden RI 1</p>
 					</div>
 					<div class="feature">
 						<i class="fa fa-check"></i>
-						<p>Mauris augue neque gravida in fermentum.</p>
+						<p class="text-justify">H. M.
+							Soeharto</p>
 					</div>
 					<div class="feature">
 						<i class="fa fa-check"></i>
-						<p>Orci phasellus egestas tellus rutrum.</p>
+						<p class="text-justify">
+							Bacharuddin Jusuf Habibie</p>
 					</div>
 					<div class="feature">
 						<i class="fa fa-check"></i>
-						<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
+						<p class="text-justify">K. H.
+							Abdurrahman Wahid</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p class="text-justify">Megawati Soekarnoputri</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p class="text-justify">Susilo Bambang Yudhoyono</p>
+					</div>
+					<div class="feature">
+						<!-- <i class="fa fa-check"></i> -->
+						<p class="text-justify">Maupun cuci kereta wisata yang akan dipergunakan untuk pejabat2 menteri
+							maupun anggota DPR/MPR
+							Cv cikaniti menanagani pencucian kereta api / KRL dan menangani kebersihan setasiun2 kereta
+							api dari perjalanan tersebut diatas memperbarui bendera dengan nama pt. baswana bhagawanta
+							indoservices pada bulan September 2021</p>
 					</div>
 				</div>
 				<!-- /why choose us content -->
 
 				<!-- About slider -->
-				<div class="col-md-6">
-			
+				<div class="col-md-6 margin">
 					<div id="about-slider" class="owl-carousel owl-theme">
-					<?php foreach($gambar as $g) { ?>
-					<img class="img-responsive" src="<?= base_url('assets1/img-produk/') ?><?=$g['gambar']?>">
-					<?php } ?>
+						<?php foreach($gambar as $g) { ?>
+						<img class="img-responsive" src="<?= base_url('assets1/img-produk/') ?><?=$g['gambar']?>">
+						<?php } ?>
 					</div>
 				</div>
 				<!-- /About slider -->
@@ -247,8 +283,8 @@
 				<div class="col-sm-4">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive image_news" src="<?= base_url('assets1/img-produk/') ?><?=$v['gambar']?>"
-								alt="">
+							<img class="img-responsive image_news"
+								src="<?= base_url('assets1/img-produk/') ?><?=$v['gambar']?>" alt="">
 						</div>
 						<div class="blog-content">
 							<ul class="blog-meta">
@@ -256,10 +292,10 @@
 								<li><i class="fa fa-clock-o"></i><?= date("d M Y", $v['tanggal'])?></li>
 							</ul>
 							<div class="limit-cr">
-							<h5><?=$v['judul']?></h5>
-							<p>
-								<?=$v['berita']?>
-							</p>
+								<h5><?=$v['judul']?></h5>
+								<p>
+									<?=$v['berita']?>
+								</p>
 							</div>
 							<br>
 							<a href="<?=base_url('Newss/newsdetail/')?><?= $v['slug'];?>">Read</a>
@@ -375,8 +411,8 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2021. All Rights Reserved. Designed by <a href="#home"
-								target="_blank">PT. Baswara Bhagawanta Indoservices</a></p>
+						<p>Copyright © 2021. All Rights Reserved. Designed by <a href="#home" target="_blank">PT.
+								Baswara Bhagawanta Indoservices</a></p>
 					</div>
 					<!-- /footer copyright -->
 

@@ -38,7 +38,6 @@ class News extends CI_Controller
             'title'     => 'Admin Tambah Berita',
             'akun'  => $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array(),
         ];
-
         $this->form_validation->set_rules('meta', 'Keterangan Meta', 'required');
         $this->form_validation->set_rules('kunci', 'Keyword Berita', 'required');
         $this->form_validation->set_rules('judul', 'Judul Berita', 'required');

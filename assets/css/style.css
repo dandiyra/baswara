@@ -1885,5 +1885,9 @@ header {
             transform:scale(0);
   }
 
-
+}
+.margin{
+    margin-top: 20% !important;
+    /* margin-bottom: auto !important; */
+    display: block;
 }
