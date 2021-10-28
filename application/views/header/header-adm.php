@@ -123,22 +123,17 @@
 							<!-- User Account -->
 							<li class="dropdown user-menu">
 								<button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-									<img src="<?=base_url("assets1/")?>img/user/user.png" class="user-image"
-										alt="User Image" />
-									<span class="d-none d-lg-inline-block"><?= $akun['nama'] ?></span>
+									<span class="d-none  d-lg-inline-block"><?= $akun['nama'] ?></span>
 								</button>
 								<ul class="dropdown-menu dropdown-menu-right">
 									<!-- User image -->
 									<li class="dropdown-header">
-										<img src="<?=base_url("assets1/")?>img/user/user.png" class="img-circle"
-											alt="User Image" />
 										<div class="d-inline-block">
-                                        <?= $akun['nama'] ?> <small class="pt-1"><?= $akun['email'] ?></small>
+											<?= $akun['nama'] ?> <small class="pt-1"><?= $akun['email'] ?></small>
 										</div>
 									</li>
-
 									<li>
-										<a href="user-profile.html">
+										<a href="<?= base_url('Account/') ?>">
 											<i class="mdi mdi-account"></i> My Profile
 										</a>
 									</li>

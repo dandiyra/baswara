@@ -299,6 +299,15 @@ $(document).ready(function() {
                 toastr.success("Data Website berhasil dihapus");
             }
 
+            // Flash Data Warna
+            if (flashdata == "Data warna berhasil ditambahkan") {
+                toastr.success("Data warna berhasil ditambahkan");
+            } else if (flashdata == "Data warna berhasil dirubah") {
+                toastr.success("Data warna berhasil dirubah");
+            } else if (flashdata == "Data Warna berhasil dihapus") {
+                toastr.success("Data Warna berhasil dihapus");
+            }
+
             // Flash Data Produk
             if (flashdata == "Data produk berhasil ditambahkan") {
                 toastr.success("Data produk berhasil ditambahkan");
@@ -340,6 +349,42 @@ $(document).ready(function() {
                 toastr.success("Data lowongan berhasil dirubah");
             } else if (flashdata == "Data lowongan berhasil dihapus") {
                 toastr.success("Data lowongan berhasil dihapus");
+            }
+
+            // Flash data login
+            if (flashdata == "Password sama dengan sebelumnya") {
+                toastr.warning("Password sama dengan sebelumnya");
+            } else if (flashdata == "Profile Berhasil Dirubah") {
+                toastr.success("Profile Berhasil Dirubah");
+            } else if (flashdata == "Password salah") {
+                toastr.error("Password salah");
+            }
+
+            // Flash Data map
+            if (flashdata == "Data map distributor berhasil ditambahkan") {
+                toastr.success("Data map distributor berhasil ditambahkan");
+            } else if (flashdata == "Data map distributor berhasil dirubah") {
+                toastr.success("Data map distributor berhasil dirubah");
+            } else if (flashdata == "Data map distributor berhasil dihapus") {
+                toastr.success("Data map distributor berhasil dihapus");
+            }
+
+            // Flash Data supplier
+            if (flashdata == "Data nilai supplier berhasil ditambahkan") {
+                toastr.success("Data nilai supplier berhasil ditambahkan");
+            } else if (flashdata == "Data nilai supplier Berhasil Dirubah") {
+                toastr.success("Data nilai supplier Berhasil Dirubah");
+            } else if (flashdata == "Data nilai supplier Berhasil Dihapus") {
+                toastr.success("Data nilai supplier Berhasil Dihapus");
+            }
+
+            // Flash Data distirbutor
+            if (flashdata == "Data kebutuhan Distributor berhasil ditambah") {
+                toastr.success("Data kebutuhan Distributor berhasil ditambah");
+            } else if (flashdata == "Data kebutuhan Distributor Berhasil Dirubah") {
+                toastr.success("Data kebutuhan Distributor Berhasil Dirubah");
+            } else if (flashdata == "Data kebutuhan Distributor Berhasil Dihapus") {
+                toastr.success("Data kebutuhan Distributor Berhasil Dihapus");
             }
         }
     }

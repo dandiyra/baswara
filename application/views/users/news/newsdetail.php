@@ -6,12 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description"
-        content="<?=$tabel['meta']?>">
-    <meta property="og:image" content="<?= base_url('assets1/img-produk/') ?><?=$tabel['gambar']?>" />
-    <meta property="og:image:width" content="1110" />
-    <meta name="keywords"
-        content="<?=$tabel['keyword']?>">
+	<meta name="description" content="<?=$tabel['meta']?>">
+	<meta property="og:image" content="<?= base_url('assets1/img-produk/') ?><?=$tabel['gambar']?>" />
+	<meta property="og:image:width" content="1110" />
+	<meta name="keywords" content="<?=$tabel['keyword']?>">
 
 	<title><?= $tabel['judul']?> | Baswara Bhagawanta Indoservices</title>
 	<link rel="icon" href="<?= base_url('assets/') ?>img/logo3.png" type="image/icon">
@@ -103,7 +101,32 @@
 
 			<!-- Row -->
 			<div class="row">
-
+				<!-- Aside -->
+				<aside id="aside" class="col-md-3">
+					<!-- Search -->
+					<form action="<?= base_url('Newss/search'); ?>" method="get">
+						<div class="widget">
+							<div class="widget-search">
+								<input class="search-input1" name="keywords" type="text" placeholder="search">
+								<button class="search-btn" type="submit" value="search"><i
+										class="fa fa-search"></i></button>
+							</div>
+						</div>
+					</form>
+					<!-- /Search -->
+					<!-- Category -->
+					<div class="widget">
+						<h3 class="title">Category</h3>
+						<div class="widget-category">
+							<?php foreach($numCategory as $val) :?>
+							<a
+								href="<?= base_url('Newss/search?keywords='. $val['kategori'])?>"><?= $val['kategori']?><span>(<?= $val['num']; ?>)</span></a>
+							<?php endforeach; ?>
+						</div>
+					</div>
+					<!-- /Category -->
+				</aside>
+				<!-- /Aside -->
 				<!-- Main -->
 				<main id="main" class="col-md-9">
 					<div class="blog">
@@ -130,36 +153,7 @@
 				<!-- /Main -->
 
 
-				<!-- Aside -->
-				<aside id="aside" class="col-md-3">
 
-					<!-- Search -->
-					<form action="<?= base_url('Newss/search'); ?>" method="get">
-					<div class="widget">
-						<div class="widget-search">
-							<input class="search-input1" name="keywords" type="text" placeholder="search">
-							<button class="search-btn" type="submit" value="search"><i class="fa fa-search"></i></button>
-						</div>
-					</div>
-					</form>
-					<!-- /Search -->
-
-					<!-- Category -->
-					<div class="widget">
-						<h3 class="title">Category</h3>
-						<div class="widget-category">
-							<?php foreach($numCategory as $val) :?>
-							<a href="<?= base_url('Newss/search?keywords='. $val['kategori'])?>"><?= $val['kategori']?><span>(<?= $val['num']; ?>)</span></a>
-							<?php endforeach; ?>
-						</div>
-					</div>
-					<!-- /Category -->
-
-					<!-- Tags -->
-					<!-- /Tags -->
-
-				</aside>
-				<!-- /Aside -->
 
 			</div>
 			<!-- /Row -->
@@ -183,7 +177,8 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="<?=base_url('Home/')?>"><img src="<?= base_url('assets/') ?>img/logo4.png" alt="baswara"></a>
+						<a href="<?=base_url('Home/')?>"><img src="<?= base_url('assets/') ?>img/logo4.png"
+								alt="baswara"></a>
 
 					</div>
 					<!-- /footer logo -->

@@ -29,12 +29,6 @@
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css" />
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
 </head>
 
 <body>
@@ -49,7 +43,6 @@
 		<!-- Nav -->
 		<nav id="nav" class="navbar nav-transparent">
 			<div class="container">
-
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
@@ -63,14 +56,12 @@
 						</a>
 					</div>
 					<!-- /Logo -->
-
 					<!-- Collapse nav button -->
 					<div class="nav-collapse">
 						<span></span>
 					</div>
 					<!-- /Collapse nav button -->
 				</div>
-
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
@@ -80,7 +71,6 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<!-- /Main navigation -->
-
 			</div>
 		</nav>
 		<!-- /Nav -->
@@ -94,19 +84,17 @@
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1 class="white-text">Baswara</h1>
-							<p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl.
+							<!-- <p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl.
 								Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc
 								posuere.
-							</p>
+							</p> -->
 						</div>
 					</div>
 					<!-- /home content -->
-
 				</div>
 			</div>
 		</div>
 		<!-- /home wrapper -->
-
 	</header>
 	<!-- /Header -->
 
@@ -187,18 +175,16 @@
 				<div class="col-md-6 margin">
 					<div id="about-slider" class="owl-carousel owl-theme">
 						<?php foreach($gambar as $g) { ?>
-						<img class="img-responsive image_home" src="<?= base_url('assets1/img-produk/') ?><?=$g['gambar']?>">
+						<img class="img-responsive image_home"
+							src="<?= base_url('assets1/img-produk/') ?><?=$g['gambar']?>">
 						<?php } ?>
 					</div>
 				</div>
 				<!-- /About slider -->
-
 			</div>
 			<!-- /Row -->
-
 		</div>
 		<!-- /Container -->
-
 	</div>
 	<!-- /About Us -->
 
@@ -208,68 +194,61 @@
 
 		<!-- Container -->
 		<div class="container">
-
 			<!-- Row -->
 			<div class="row">
-
 				<!-- Section header -->
 				<div class="section-header text-center">
 					<h2 class="title">Vision & Mission</h2>
 				</div>
 				<!-- /Section header -->
-
+				<!-- about -->
+				<div class="col-md-12">
+					<div class="myabout">
+						<p class="justify-content-center">Menjadi sebuah perusahaan multinasional yang profesional,
+							kreatif, inovatif dengan pelayanan yang baik.</p>
+					</div>
+				</div>
 				<!-- about -->
 				<div class="col-md-4">
 					<div class="about">
-						<i class="fa fa-cogs"></i>
-						<h3>Fully Customizible</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
+						<p class="text-justify">Membangun kepercayaan dan selalu menjaga hubungan baik dengan
+							mitra-mitra usaha.</p>
 					</div>
 				</div>
 				<!-- /about -->
-
 				<!-- about -->
 				<div class="col-md-4">
 					<div class="about">
-						<i class="fa fa-magic"></i>
-						<h3>Awesome Features</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
+						<p class="text-justify">Menciptakan peluang bisnis yang baru dan selalu inovatif dalam berkarya,
+							sehingga diharapkan
+							dapat menciptakan lapangan kerja.</p>
 					</div>
 				</div>
 				<!-- /about -->
-
 				<!-- about -->
 				<div class="col-md-4">
 					<div class="about">
-						<i class="fa fa-mobile"></i>
-						<h3>Fully Responsive</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
+						<p class="text-justify">Selalu mengutamakan loyalitas dan kejujuran dalam bekerja sama dengan
+							mitra-mitra,
+							sehingga terciptanya transparansi dan keharmonisan hubungan kerja yang baik dan
+							berkelanjutan.</p>
 					</div>
 				</div>
 				<!-- /about -->
-
 			</div>
 			<!-- /Row -->
-
 		</div>
 		<!-- /Container -->
-
 	</div>
 	<!-- /About -->
-
 
 	<!-- Blog -->
 	<div id="blog" class="section md-padding bg-grey">
 
 		<!-- Container -->
 		<div class="container">
-
 			<!-- Row -->
 			<div class="row1">
-
 				<!-- Section header -->
 				<div class="section-header text-center">
 					<a href="<?=base_url('User/news')?>">
@@ -304,15 +283,10 @@
 				</div>
 				<?php } ?>
 				<!-- /blog -->
-
-
-
 			</div>
 			<!-- /Row -->
-
 		</div>
 		<!-- /Container -->
-
 	</div>
 	<!-- /Blog -->
 
@@ -324,13 +298,11 @@
 
 			<!-- Row -->
 			<div class="row">
-
 				<!-- Section-header -->
 				<div class="section-header text-center">
 					<h2 class="title">Get in touch</h2>
 				</div>
 				<!-- /Section-header -->
-
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
@@ -340,7 +312,6 @@
 					</div>
 				</div>
 				<!-- /contact -->
-
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
@@ -350,7 +321,6 @@
 					</div>
 				</div>
 				<!-- /contact -->
-
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
@@ -372,13 +342,10 @@
 					</form>
 				</div> -->
 				<!-- /contact form -->
-
 			</div>
 			<!-- /Row -->
-
 		</div>
 		<!-- /Container -->
-
 	</div>
 	<!-- /Contact -->
 
@@ -391,16 +358,12 @@
 
 			<!-- Row -->
 			<div class="row">
-
 				<div class="col-md-12">
-
 					<!-- footer logo -->
 					<div class="footer-logo">
 						<a href="#home"><img src="<?= base_url('assets/') ?>img/logo4.png" alt="bhaswara"></a>
-
 					</div>
 					<!-- /footer logo -->
-
 					<!-- footer follow -->
 					<ul class="footer-follow">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -408,22 +371,17 @@
 						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
-
 					<!-- footer copyright -->
 					<div class="footer-copyright">
 						<p>Copyright © 2021. All Rights Reserved. Designed by <a href="#home" target="_blank">PT.
 								Baswara Bhagawanta Indoservices</a></p>
 					</div>
 					<!-- /footer copyright -->
-
 				</div>
-
 			</div>
 			<!-- /Row -->
-
 		</div>
 		<!-- /Container -->
-
 	</footer>
 	<!-- /Footer -->
 
